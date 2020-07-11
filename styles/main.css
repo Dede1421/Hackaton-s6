@@ -1,0 +1,366 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Color-elements*/
+/*Fonts*/
+/*Width*/
+/*line-height*/
+/*padding*/
+/*flex*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+section {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+}
+
+section h2 {
+  color: #1f3f68;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+section h3 {
+  color: #356ead;
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 1.3rem;
+  padding: 20px 0px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.icons a {
+  margin-right: 20px;
+}
+
+.author {
+  color: #1f3f68;
+  font-weight: bold;
+}
+
+button {
+  background-color: #5a98d0;
+  border-radius: 10px;
+  border-style: none;
+  color: #fff;
+  padding: 15px 60px;
+}
+
+/*hr-lines*/
+.line-1 {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.line-2 {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*Estilos del Banner */
+.banner {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  max-width: 100%;
+  padding: 50px;
+}
+
+.banner .banner-c {
+  color: #fff;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  line-height: 30px;
+  width: 40%;
+  margin: auto;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1f3f68;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*Estilos de la Sección Search */
+.search {
+  padding: 20px 0px;
+  position: relative;
+}
+
+.search img {
+  position: absolute;
+  padding: 0px 20px;
+  top: 40px;
+}
+
+.search input {
+  width: 100%;
+  border-style: none;
+  background-color: #f4f4f4;
+  padding: 20px 50px;
+  border-radius: 10px;
+  outline: none;
+}
+
+/*Estilo de la Sección Popular*/
+.article-f1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+}
+
+.article-f1 .popular-c {
+  padding-right: 20px;
+}
+
+.article-f1 h2 {
+  font-size: 1.9rem;
+  padding-bottom: 30px;
+}
+
+.article-f2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.article-f2 h2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/*Estilo de la Sección all-article*/
+.article-f3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.article-f3 .content-info {
+  padding-left: 20px;
+}
+
+.article-f3 h2 {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+
+.article-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #356ead;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0px 80px 0px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #356ead;
+}
+
+/*Estilos del header*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+/*Estilos del footer*/
+footer {
+  background-color: #316099;
+  color: #fff;
+  width: 95%;
+  border-top-right-radius: 140px;
+}
+
+footer .work-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 100px 30px 100px;
+}
+
+footer h2 {
+  font-size: 2.3rem;
+  font-family: Helvetica;
+}
+
+footer .work-us p {
+  padding-top: 30px;
+  opacity: 0.6;
+}
+
+footer .work-us div {
+  width: 50%;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+  padding-bottom: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer li {
+  padding-bottom: 20px;
+}
+
+footer .copyright {
+  padding: 0px 0px 80px 100px;
+  opacity: 0.6;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+.footer-info img {
+  padding-bottom: 20px;
+}
+
+.footer-info .span {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */

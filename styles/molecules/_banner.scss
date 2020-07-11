@@ -1,0 +1,23 @@
+/*Estilos del Banner */
+.banner {
+  background-image: url('../images/banner.png');
+  background-size: cover;
+  max-width: map-get($max-width, banner);
+  padding: map-get($padding, banner);
+
+  .banner-c {
+    color: map-get($color-elements, h1);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: map-get($font-size, h1);
+    margin-bottom: 30px;
+  }
+
+  p {
+    line-height: map-get($line-height, banner);
+    width: map-get($width, p);
+    margin: auto;
+  }
+}

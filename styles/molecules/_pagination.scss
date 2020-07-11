@@ -1,0 +1,10 @@
+.pagination {
+  display: $d-flex;
+  justify-content: $jc-between;
+  padding: 50px 0px 80px 0px;
+
+  a {
+    text-decoration: none;
+    color: map-get($color-elements, more-article-post);
+  }
+}

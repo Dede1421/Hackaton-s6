@@ -1,0 +1,64 @@
+/*Estilos del footer*/
+footer {
+  background-color: map-get($color-elements, footer);
+  color: map-get($color-elements, footer-p);
+  width: map-get($width, footer);
+  border-top-right-radius: 140px;
+
+  .work-us {
+    display: $d-flex;
+    justify-content: $jc-between;
+    align-items: $align-center;
+    padding: 100px 100px 30px 100px;
+  }
+
+  h2 {
+    font-size: map-get($font-size, footer-h2);
+    font-family: map-get($font-family, h2);
+  }
+
+  .work-us p {
+    padding-top: 30px;
+    opacity: 0.6;
+  }
+
+  .work-us div {
+    width: 50%;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: map-get($font-weight, h3);
+    font-family: map-get($font-family, h3);
+    padding-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: map-get($color-elements, li);
+  }
+
+  li {
+    padding-bottom: 20px;
+  }
+
+  .copyright {
+    padding: 0px 0px 80px 100px;
+    opacity: 0.6;
+  }
+}
+
+.footer-info {
+  display: $d-flex;
+  justify-content: $jc-between;
+  align-items: $align-center;
+  padding: 100px;
+
+  img {
+    padding-bottom: 20px;
+  }
+
+  .span {
+    font-weight: bold;
+  }
+}

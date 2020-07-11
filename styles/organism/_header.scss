@@ -1,0 +1,9 @@
+/*Estilos del header*/
+header {
+  display: $d-flex;
+  justify-content: $jc-between;
+  align-items: center;
+  padding: map-get($padding, header);
+}
+
+

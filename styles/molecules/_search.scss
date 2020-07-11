@@ -1,0 +1,20 @@
+/*Estilos de la Sección Search */
+.search {
+  padding: map-get($padding, search);
+  position: relative;
+
+  img {
+    position: absolute;
+    padding: map-get($padding, image);
+    top: 40px;
+  }
+
+  input {
+    width: map-get($width, input);
+    border-style: none;
+    background-color: #f4f4f4;
+    padding: map-get($padding, input);
+    border-radius: 10px;
+    outline: none;
+  }
+}

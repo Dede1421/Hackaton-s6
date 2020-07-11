@@ -1,0 +1,4 @@
+.author {
+  color: map-get($color-elements, author);
+  font-weight: map-get($font-weight, p);
+}

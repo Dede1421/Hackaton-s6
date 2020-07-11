@@ -1,0 +1,79 @@
+/*Color-elements*/
+
+$color-elements: (
+  links: #1f3f68,
+  h1: #fff,
+  h3: #356ead,
+  h2: #1f3f68,
+  footer: #316099,
+  footer-p: #fff,
+  button: #fff,
+  li: #fff,
+  author: #1f3f68,
+  more-article-post: #356ead,
+);
+
+/*Fonts*/
+
+$font-weight: (
+  h2: bold,
+  h3: bold,
+  p: bold,
+  links: bold,
+);
+
+$font-size: (
+  h1: 2.8rem,
+  h2: 1.9rem,
+  h3: 1.3rem,
+  article-f2: 1.4rem,
+  article-f3: 1.1rem,
+  footer-h2: 2.3rem,
+  links: 1.3rem,
+);
+
+$font-family: (
+  body: Arial,
+  h2: Helvetica,
+  h3: Helvetica,
+  links: Helvetica,
+);
+
+/*Width*/
+
+$width: (
+  section: 100%,
+  p: 40%,
+  input: 100%,
+  footer: 95%,
+);
+
+$max-width: (
+  section: 960px,
+  banner: 100%,
+);
+
+/*line-height*/
+
+$line-height: (
+  p: 1.5,
+  banner: 30px,
+  popular: 1.5,
+);
+
+/*padding*/
+
+$padding: (
+  header: 40px,
+  banner: 50px,
+  search: 20px 0px,
+  image: 0px 20px,
+  input: 20px 50px,
+  section-h3: 20px 0px,
+);
+
+/*flex*/
+
+$d-flex: flex;
+$jc-between: space-between;
+$align-center: center;

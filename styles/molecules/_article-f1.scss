@@ -1,0 +1,16 @@
+/*Estilo de la Sección Popular*/
+
+.article-f1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+
+  .popular-c {
+    padding-right: 20px;
+  }
+
+  h2 {
+    font-size: map-get($font-size, h2);
+    padding-bottom: 30px;
+  }
+}

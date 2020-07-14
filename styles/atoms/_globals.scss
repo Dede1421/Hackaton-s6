@@ -10,6 +10,10 @@ section {
   max-width: map-get($max-width, section);
   width: map-get($width, section);
   margin: auto;
+
+  @include breakpoints(lg) {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 section h2 {
@@ -31,5 +35,7 @@ p {
 }
 
 .icons a {
-  margin-right: 20px;
+  margin-left: 20px;
 }
+
+

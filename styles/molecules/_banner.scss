@@ -19,5 +19,9 @@
     line-height: map-get($line-height, banner);
     width: map-get($width, p);
     margin: auto;
+
+    @include breakpoints(lg) {
+      width: 46%;
+    }
   }
 }

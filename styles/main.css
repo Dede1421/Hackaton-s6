@@ -59,6 +59,7 @@ table {
 /*line-height*/
 /*padding*/
 /*flex*/
+/*Breakpoints*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,6 +73,12 @@ section {
   max-width: 960px;
   width: 100%;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 section h2 {
@@ -93,7 +100,7 @@ p {
 }
 
 .icons a {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .author {
@@ -138,8 +145,14 @@ button {
 
 .banner p {
   line-height: 30px;
-  width: 40%;
+  width: 44%;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .banner p {
+    width: 46%;
+  }
 }
 
 nav ul {
@@ -161,14 +174,20 @@ nav a {
 
 /*Estilos de la Sección Search */
 .search {
-  padding: 20px 0px;
+  padding: 50px 0px 40px 0px;
   position: relative;
 }
 
 .search img {
   position: absolute;
   padding: 0px 20px;
-  top: 40px;
+  top: 68px;
+}
+
+@media (max-width: 1024px) {
+  .search img {
+    top: 38px;
+  }
 }
 
 .search input {
@@ -178,6 +197,12 @@ nav a {
   padding: 20px 50px;
   border-radius: 10px;
   outline: none;
+}
+
+@media (max-width: 1024px) {
+  .search {
+    padding: 20px;
+  }
 }
 
 /*Estilo de la Sección Popular*/
@@ -193,6 +218,10 @@ nav a {
   padding-right: 20px;
 }
 
+.article-f1 .img-popular img {
+  width: 100%;
+}
+
 .article-f1 h2 {
   font-size: 1.9rem;
   padding-bottom: 30px;
@@ -206,6 +235,10 @@ nav a {
   gap: 30px;
 }
 
+.article-f2 article .img-popular2 {
+  width: 100%;
+}
+
 .article-f2 h2 {
   font-size: 1.4rem;
   line-height: 1.5;
@@ -216,11 +249,24 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 20px;
 }
 
+.article-f3 .img-allArticle img {
+  width: 100%;
+}
+
 .article-f3 .content-info {
-  padding-left: 20px;
+  width: 64%;
+}
+
+@media (max-width: 1024px) {
+  .article-f3 .content-info {
+    width: 62%;
+  }
 }
 
 .article-f3 h2 {
@@ -285,6 +331,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 40px 20px;
+  }
 }
 
 /*Estilos del footer*/
@@ -360,7 +412,7 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
-.footer-info .span {
+.footer-info span {
   font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

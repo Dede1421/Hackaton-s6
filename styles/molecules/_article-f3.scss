@@ -2,10 +2,19 @@
 
 .article-f3 {
   display: $d-flex;
+  justify-content: $jc-between;
   padding-bottom: 20px;
 
+  .img-allArticle img {
+    width: 100%;
+  }
+
   .content-info {
-    padding-left: 20px;
+    width: map-get($width, content-info);
+
+    @include breakpoints(lg) {
+      width: 62%;
+    }
   }
 
   h2 {

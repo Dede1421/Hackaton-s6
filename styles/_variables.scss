@@ -43,9 +43,10 @@ $font-family: (
 
 $width: (
   section: 100%,
-  p: 40%,
+  p: 44%,
   input: 100%,
   footer: 95%,
+  content-info: 64%,
 );
 
 $max-width: (
@@ -66,7 +67,7 @@ $line-height: (
 $padding: (
   header: 40px,
   banner: 50px,
-  search: 20px 0px,
+  search: 50px 0px 40px 0px,
   image: 0px 20px,
   input: 20px 50px,
   section-h3: 20px 0px,
@@ -77,3 +78,12 @@ $padding: (
 $d-flex: flex;
 $jc-between: space-between;
 $align-center: center;
+
+/*Breakpoints*/
+
+$breakpoints: (
+  lg: 1024px,
+  md: 970px,
+  sm: 760px,
+  xsm: 420px,
+);

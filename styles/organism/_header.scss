@@ -4,6 +4,8 @@ header {
   justify-content: $jc-between;
   align-items: center;
   padding: map-get($padding, header);
+
+  @include breakpoints(lg) {
+    padding: 40px 20px;
+  }
 }
-
-

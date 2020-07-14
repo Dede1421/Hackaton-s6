@@ -6,7 +6,11 @@
   img {
     position: absolute;
     padding: map-get($padding, image);
-    top: 40px;
+    top: 68px;
+
+    @include breakpoints(lg) {
+      top: 38px;
+    }
   }
 
   input {
@@ -16,5 +20,9 @@
     padding: map-get($padding, input);
     border-radius: 10px;
     outline: none;
+  }
+
+  @include breakpoints(lg) {
+    padding: 20px;
   }
 }

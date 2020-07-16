@@ -1,24 +1,53 @@
 /*Estilo de la Sección all-article*/
 
+.content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .article-f3 {
   display: $d-flex;
-  justify-content: $jc-between;
-  padding-bottom: 20px;
+  // justify-content: $jc-between;
+  padding-bottom: 30px;
 
   .img-allArticle img {
     width: 100%;
+
+    @include breakpoints(md) {
+      height: 100%;
+    }
   }
 
   .content-info {
+    max-width: 590px;
     width: map-get($width, content-info);
+    padding-left: 20px;
 
-    @include breakpoints(lg) {
-      width: 62%;
+    // @include breakpoints(lg) {
+    //   width: 61%;
+    // }
+
+    // @include breakpoints(md) {
+    //   width: 59%;
+    // }
+    @include breakpoints(md) {
+      .article-footer {
+        padding-top: 10px;
+      }
     }
   }
 
   h2 {
     font-size: map-get($font-size, article-f3);
     padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  @include breakpoints(sm) {
+    display: block;
   }
 }

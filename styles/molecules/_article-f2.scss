@@ -1,7 +1,7 @@
 .article-f2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 
   article .img-popular2 {
     width: 100%;
@@ -10,5 +10,17 @@
   h2 {
     font-size: map-get($font-size, article-f2);
     line-height: map-get($line-height, popular);
+
+    @include breakpoints(md) {
+      font-size: 1.1rem;
+    }
   }
+
+  .article-footer {
+    margin-top: 20px;
+  }
+
+  // @include breakpoints(sm) {
+  //   display: block;
+  // }
 }

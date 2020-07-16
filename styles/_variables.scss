@@ -29,6 +29,7 @@ $font-size: (
   article-f2: 1.4rem,
   article-f3: 1.1rem,
   footer-h2: 2.3rem,
+  footer-h3: 1.2rem,
   links: 1.3rem,
 );
 
@@ -46,7 +47,7 @@ $width: (
   p: 44%,
   input: 100%,
   footer: 95%,
-  content-info: 64%,
+  content-info: 100%,
 );
 
 $max-width: (
@@ -83,7 +84,7 @@ $align-center: center;
 
 $breakpoints: (
   lg: 1024px,
-  md: 970px,
-  sm: 760px,
+  md: 940px,
+  sm: 765px,
   xsm: 420px,
 );

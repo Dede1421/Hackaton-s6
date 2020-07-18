@@ -549,6 +549,7 @@ footer .work-us p {
 @media (max-width: 650px) {
   footer .work-us {
     display: block;
+    padding: 50px 50px 30px 30px;
   }
 }
 
@@ -588,6 +589,12 @@ footer .copyright {
 @media (max-width: 940px) {
   footer .copyright {
     padding: 0px 0px 60px 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer .copyright {
+    padding: 0px 0px 30px 30px;
   }
 }
 
@@ -647,6 +654,7 @@ footer .copyright {
 @media (max-width: 650px) {
   .footer-info {
     display: block;
+    padding: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

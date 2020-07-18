@@ -36,6 +36,7 @@ footer {
 
     @include breakpoints(sm) {
       display: block;
+      padding: 50px 50px 30px 30px;
     }
   }
 
@@ -71,6 +72,10 @@ footer {
 
     @include breakpoints(md) {
       padding: 0px 0px 60px 50px;
+    }
+
+    @include breakpoints(sm) {
+      padding: 0px 0px 30px 30px;
     }
   }
 }
@@ -115,5 +120,6 @@ footer {
 
   @include breakpoints(sm) {
     display: block;
+    padding: 30px;
   }
 }

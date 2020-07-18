@@ -22,10 +22,12 @@
   p {
     line-height: map-get($line-height, banner);
     width: map-get($width, p);
+    color: #fff;
     margin: auto;
 
-    @include breakpoints(lg) {
-      width: 46%;
+    @include breakpoints(sm) {
+      width: 100%;
+      font-size: 14px;
     }
   }
 }

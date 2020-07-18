@@ -32,10 +32,10 @@ section h3 {
 
 p {
   line-height: map-get($line-height, p);
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .icons a {
   margin-left: 20px;
 }
-
-

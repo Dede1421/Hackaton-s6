@@ -5,6 +5,10 @@ nav {
 
   li {
     margin-left: 30px;
+
+    @include breakpoints(xsm) {
+      margin-left: 20px;
+    }
   }
 
   a {
@@ -12,5 +16,9 @@ nav {
     color: map-get($color-elements, links);
     font-size: map-get($font-size, links);
     font-weight: bold;
+
+    @include breakpoints(xsm) {
+      font-size: 1rem;
+    }
   }
 }

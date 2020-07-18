@@ -12,6 +12,14 @@
       .article-footer {
         padding-top: 10px;
       }
+
+      padding-right: 0px;
+    }
+
+    @include breakpoints(sm) {
+      p {
+        font-size: 14px;
+      }
     }
   }
 
@@ -36,11 +44,12 @@
     }
 
     @include breakpoints(sm) {
-      padding-bottom: 20px;
+      padding: 10px 0px 10px;
     }
   }
 
   @include breakpoints(sm) {
-    display: block;
+    display: $d-flex;
+    flex-direction: column-reverse;
   }
 }

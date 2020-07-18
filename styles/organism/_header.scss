@@ -8,4 +8,8 @@ header {
   @include breakpoints(lg) {
     padding: 40px 20px;
   }
+
+  @include breakpoints(xsm) {
+    padding: 40px 10px;
+  }
 }

@@ -8,7 +8,6 @@
 
 .article-f3 {
   display: $d-flex;
-  // justify-content: $jc-between;
   padding-bottom: 30px;
 
   .img-allArticle img {
@@ -17,6 +16,10 @@
     @include breakpoints(md) {
       height: 100%;
     }
+
+    // @include breakpoints(sm) {
+    //   height: 0%;
+    // }
   }
 
   .content-info {
@@ -24,16 +27,13 @@
     width: map-get($width, content-info);
     padding-left: 20px;
 
-    // @include breakpoints(lg) {
-    //   width: 61%;
-    // }
+    @include breakpoints(sm) {
+      padding-left: 0px;
+    }
 
-    // @include breakpoints(md) {
-    //   width: 59%;
-    // }
-    @include breakpoints(md) {
+    @include breakpoints(sm) {
       .article-footer {
-        padding-top: 10px;
+        margin-top: 20px;
       }
     }
   }
@@ -41,10 +41,18 @@
   h2 {
     font-size: map-get($font-size, article-f3);
     padding-bottom: 10px;
+
+    @include breakpoints(sm) {
+      padding-top: 10px;
+    }
   }
 
   p {
     font-size: 0.9rem;
+
+    @include breakpoints(xsm) {
+      font-size: 14px;
+    }
   }
 
   @include breakpoints(sm) {

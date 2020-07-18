@@ -10,6 +10,33 @@ footer {
     justify-content: $jc-between;
     align-items: $align-center;
     padding: 100px 100px 30px 100px;
+
+    .work-info {
+      width: 50%;
+
+      @include breakpoints(sm) {
+        width: 100%;
+      }
+    }
+
+    p {
+      padding-top: 30px;
+      opacity: 0.6;
+      color: #fff;
+
+      @include breakpoints(sm) {
+        font-size: 1rem;
+        padding-bottom: 30px;
+      }
+    }
+
+    @include breakpoints(md) {
+      padding: 50px 50px 30px 50px;
+    }
+
+    @include breakpoints(sm) {
+      display: block;
+    }
   }
 
   h2 {
@@ -19,15 +46,6 @@ footer {
     @include breakpoints(md) {
       font-size: 2rem;
     }
-  }
-
-  .work-us p {
-    padding-top: 30px;
-    opacity: 0.6;
-  }
-
-  .work-us div {
-    width: 50%;
   }
 
   h3 {
@@ -49,6 +67,11 @@ footer {
   .copyright {
     padding: 0px 0px 80px 100px;
     opacity: 0.6;
+    color: #fff;
+
+    @include breakpoints(md) {
+      padding: 0px 0px 60px 50px;
+    }
   }
 }
 
@@ -66,7 +89,11 @@ footer {
     }
 
     @include breakpoints(md) {
-      width: 42%;
+      width: 39%;
+    }
+
+    @include breakpoints(sm) {
+      width: 100%;
     }
 
     .address {
@@ -80,6 +107,10 @@ footer {
 
   span {
     font-weight: bold;
+  }
+
+  @include breakpoints(md) {
+    padding: 50px;
   }
 
   @include breakpoints(sm) {

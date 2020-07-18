@@ -4,4 +4,8 @@ button {
   border-style: none;
   color: map-get($color-elements, button);
   padding: 15px 60px;
+
+  @include breakpoints(xsm) {
+    padding: 15px 90px;
+  }
 }

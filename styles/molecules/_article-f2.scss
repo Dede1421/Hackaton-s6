@@ -13,6 +13,7 @@
 
     @include breakpoints(md) {
       font-size: 1.1rem;
+      padding: 10px 0px 10px;
     }
   }
 
@@ -20,7 +21,9 @@
     margin-top: 20px;
   }
 
-  // @include breakpoints(sm) {
-  //   display: block;
-  // }
+  @include breakpoints(xsm) {
+    p {
+      font-size: 14px;
+    }
+  }
 }

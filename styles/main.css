@@ -97,6 +97,8 @@ section h3 {
 
 p {
   line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .icons a {
@@ -114,6 +116,12 @@ button {
   border-style: none;
   color: #fff;
   padding: 15px 60px;
+}
+
+@media (max-width: 480px) {
+  button {
+    padding: 15px 90px;
+  }
 }
 
 /*hr-lines*/
@@ -151,13 +159,15 @@ button {
 
 .banner p {
   line-height: 30px;
-  width: 44%;
+  width: 60%;
+  color: #fff;
   margin: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 650px) {
   .banner p {
-    width: 46%;
+    width: 100%;
+    font-size: 14px;
   }
 }
 
@@ -171,11 +181,23 @@ nav li {
   margin-left: 30px;
 }
 
+@media (max-width: 480px) {
+  nav li {
+    margin-left: 20px;
+  }
+}
+
 nav a {
   text-decoration: none;
   color: #1f3f68;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 1rem;
+  }
 }
 
 /*Estilos de la Sección Search */
@@ -225,8 +247,17 @@ nav a {
 }
 
 @media (max-width: 940px) {
+  .article-f1 .content-info {
+    padding-right: 0px;
+  }
   .article-f1 .content-info .article-footer {
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .article-f1 .content-info p {
+    font-size: 14px;
   }
 }
 
@@ -257,15 +288,21 @@ nav a {
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 650px) {
   .article-f1 h2 {
-    padding-bottom: 20px;
+    padding: 10px 0px 10px;
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 650px) {
   .article-f1 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -289,11 +326,18 @@ nav a {
 @media (max-width: 940px) {
   .article-f2 h2 {
     font-size: 1.1rem;
+    padding: 10px 0px 10px;
   }
 }
 
 .article-f2 .article-footer {
   margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .article-f2 p {
+    font-size: 14px;
+  }
 }
 
 /*Estilo de la Sección all-article*/
@@ -333,9 +377,15 @@ nav a {
   padding-left: 20px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 650px) {
+  .article-f3 .content-info {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 650px) {
   .article-f3 .content-info .article-footer {
-    padding-top: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -344,11 +394,23 @@ nav a {
   padding-bottom: 10px;
 }
 
+@media (max-width: 650px) {
+  .article-f3 h2 {
+    padding-top: 10px;
+  }
+}
+
 .article-f3 p {
   font-size: 0.9rem;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 480px) {
+  .article-f3 p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
   .article-f3 {
     display: block;
   }
@@ -364,6 +426,10 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.article-footer p {
+  letter-spacing: normal;
 }
 
 .see-more {
@@ -418,6 +484,12 @@ header {
   }
 }
 
+@media (max-width: 480px) {
+  header {
+    padding: 40px 10px;
+  }
+}
+
 /*Estilos del footer*/
 footer {
   background-color: #316099;
@@ -439,6 +511,41 @@ footer .work-us {
   padding: 100px 100px 30px 100px;
 }
 
+footer .work-us .work-info {
+  width: 50%;
+}
+
+@media (max-width: 650px) {
+  footer .work-us .work-info {
+    width: 100%;
+  }
+}
+
+footer .work-us p {
+  padding-top: 30px;
+  opacity: 0.6;
+  color: #fff;
+}
+
+@media (max-width: 650px) {
+  footer .work-us p {
+    font-size: 1rem;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 940px) {
+  footer .work-us {
+    padding: 50px 50px 30px 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer .work-us {
+    display: block;
+  }
+}
+
 footer h2 {
   font-size: 2.3rem;
   font-family: Helvetica;
@@ -448,15 +555,6 @@ footer h2 {
   footer h2 {
     font-size: 2rem;
   }
-}
-
-footer .work-us p {
-  padding-top: 30px;
-  opacity: 0.6;
-}
-
-footer .work-us div {
-  width: 50%;
 }
 
 footer h3 {
@@ -478,6 +576,13 @@ footer li {
 footer .copyright {
   padding: 0px 0px 80px 100px;
   opacity: 0.6;
+  color: #fff;
+}
+
+@media (max-width: 940px) {
+  footer .copyright {
+    padding: 0px 0px 60px 50px;
+  }
 }
 
 .footer-info {
@@ -505,7 +610,13 @@ footer .copyright {
 
 @media (max-width: 940px) {
   .footer-info .contact {
-    width: 42%;
+    width: 39%;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-info .contact {
+    width: 100%;
   }
 }
 
@@ -521,7 +632,13 @@ footer .copyright {
   font-weight: bold;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 940px) {
+  .footer-info {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 650px) {
   .footer-info {
     display: block;
   }

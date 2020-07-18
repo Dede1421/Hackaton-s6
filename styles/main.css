@@ -247,15 +247,15 @@ nav a {
 }
 
 @media (max-width: 940px) {
-  .article-f1 .content-info {
-    padding-right: 0px;
-  }
   .article-f1 .content-info .article-footer {
     padding-top: 10px;
   }
 }
 
 @media (max-width: 650px) {
+  .article-f1 .content-info {
+    padding-right: 0px;
+  }
   .article-f1 .content-info p {
     font-size: 14px;
   }
@@ -294,6 +294,12 @@ nav a {
   }
 }
 
+@media (max-width: 480px) {
+  .article-f1 h2 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 650px) {
   .article-f1 {
     display: -webkit-box;
@@ -321,12 +327,12 @@ nav a {
 .article-f2 h2 {
   font-size: 1.4rem;
   line-height: 1.5;
+  padding: 10px 0px 10px;
 }
 
 @media (max-width: 940px) {
   .article-f2 h2 {
     font-size: 1.1rem;
-    padding: 10px 0px 10px;
   }
 }
 

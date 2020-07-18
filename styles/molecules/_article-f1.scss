@@ -12,11 +12,10 @@
       .article-footer {
         padding-top: 10px;
       }
-
-      padding-right: 0px;
     }
 
     @include breakpoints(sm) {
+      padding-right: 0px;
       p {
         font-size: 14px;
       }
@@ -45,6 +44,10 @@
 
     @include breakpoints(sm) {
       padding: 10px 0px 10px;
+    }
+
+    @include breakpoints(xsm) {
+      font-size: 20px;
     }
   }
 

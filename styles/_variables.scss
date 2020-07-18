@@ -29,6 +29,7 @@ $font-size: (
   article-f2: 1.4rem,
   article-f3: 1.1rem,
   footer-h2: 2.3rem,
+  footer-h3: 1.2rem,
   links: 1.3rem,
 );
 
@@ -43,9 +44,10 @@ $font-family: (
 
 $width: (
   section: 100%,
-  p: 44%,
+  p: 60%,
   input: 100%,
   footer: 95%,
+  content-info: 100%,
 );
 
 $max-width: (
@@ -66,7 +68,7 @@ $line-height: (
 $padding: (
   header: 40px,
   banner: 50px,
-  search: 20px 0px,
+  search: 50px 0px 40px 0px,
   image: 0px 20px,
   input: 20px 50px,
   section-h3: 20px 0px,
@@ -77,3 +79,12 @@ $padding: (
 $d-flex: flex;
 $jc-between: space-between;
 $align-center: center;
+
+/*Breakpoints*/
+
+$breakpoints: (
+  lg: 1024px,
+  md: 940px,
+  sm: 650px,
+  xsm: 480px,
+);

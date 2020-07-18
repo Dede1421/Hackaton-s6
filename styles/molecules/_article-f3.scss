@@ -1,15 +1,61 @@
 /*Estilo de la Sección all-article*/
 
+.content-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .article-f3 {
   display: $d-flex;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+
+  .img-allArticle img {
+    width: 100%;
+
+    @include breakpoints(md) {
+      height: 100%;
+    }
+
+    // @include breakpoints(sm) {
+    //   height: 0%;
+    // }
+  }
 
   .content-info {
+    max-width: 590px;
+    width: map-get($width, content-info);
     padding-left: 20px;
+
+    @include breakpoints(sm) {
+      padding-left: 0px;
+    }
+
+    @include breakpoints(sm) {
+      .article-footer {
+        margin-top: 20px;
+      }
+    }
   }
 
   h2 {
     font-size: map-get($font-size, article-f3);
     padding-bottom: 10px;
+
+    @include breakpoints(sm) {
+      padding-top: 10px;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+
+    @include breakpoints(xsm) {
+      font-size: 14px;
+    }
+  }
+
+  @include breakpoints(sm) {
+    display: block;
   }
 }

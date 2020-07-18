@@ -10,6 +10,10 @@ section {
   max-width: map-get($max-width, section);
   width: map-get($width, section);
   margin: auto;
+
+  @include breakpoints(lg) {
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 section h2 {
@@ -28,8 +32,10 @@ section h3 {
 
 p {
   line-height: map-get($line-height, p);
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .icons a {
-  margin-right: 20px;
+  margin-left: 20px;
 }

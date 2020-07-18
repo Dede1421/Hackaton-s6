@@ -10,27 +10,49 @@ footer {
     justify-content: $jc-between;
     align-items: $align-center;
     padding: 100px 100px 30px 100px;
+
+    .work-info {
+      width: 50%;
+
+      @include breakpoints(sm) {
+        width: 100%;
+      }
+    }
+
+    p {
+      padding-top: 30px;
+      opacity: 0.6;
+      color: #fff;
+
+      @include breakpoints(sm) {
+        font-size: 1rem;
+        padding-bottom: 30px;
+      }
+    }
+
+    @include breakpoints(md) {
+      padding: 50px 50px 30px 50px;
+    }
+
+    @include breakpoints(sm) {
+      display: block;
+    }
   }
 
   h2 {
     font-size: map-get($font-size, footer-h2);
     font-family: map-get($font-family, h2);
-  }
 
-  .work-us p {
-    padding-top: 30px;
-    opacity: 0.6;
-  }
-
-  .work-us div {
-    width: 50%;
+    @include breakpoints(md) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
-    font-size: 20px;
+    font-size: map-get($font-size, footer-h3);
     font-weight: map-get($font-weight, h3);
     font-family: map-get($font-family, h3);
-    padding-bottom: 30px;
+    padding: 10px 0px 30px 0px;
   }
 
   a {
@@ -45,6 +67,11 @@ footer {
   .copyright {
     padding: 0px 0px 80px 100px;
     opacity: 0.6;
+    color: #fff;
+
+    @include breakpoints(md) {
+      padding: 0px 0px 60px 50px;
+    }
   }
 }
 
@@ -54,11 +81,39 @@ footer {
   align-items: $align-center;
   padding: 100px;
 
+  .contact {
+    width: 30%;
+
+    @include breakpoints(lg) {
+      width: 35%;
+    }
+
+    @include breakpoints(md) {
+      width: 39%;
+    }
+
+    @include breakpoints(sm) {
+      width: 100%;
+    }
+
+    .address {
+      padding-bottom: 25px;
+    }
+  }
+
   img {
     padding-bottom: 20px;
   }
 
   span {
     font-weight: bold;
+  }
+
+  @include breakpoints(md) {
+    padding: 50px;
+  }
+
+  @include breakpoints(sm) {
+    display: block;
   }
 }

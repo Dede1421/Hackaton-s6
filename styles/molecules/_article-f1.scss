@@ -2,15 +2,54 @@
 
 .article-f1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   padding-bottom: 30px;
 
-  .popular-c {
+  .content-info {
     padding-right: 20px;
+
+    @include breakpoints(md) {
+      .article-footer {
+        padding-top: 10px;
+      }
+
+      padding-right: 0px;
+    }
+
+    @include breakpoints(sm) {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .img-popular img {
+    width: 100%;
+  }
+
+  @include breakpoints(md) {
+    .img-popular {
+      display: $d-flex;
+      align-items: $align-center;
+    }
   }
 
   h2 {
     font-size: map-get($font-size, h2);
     padding-bottom: 30px;
+
+    @include breakpoints(md) {
+      font-size: 1.7rem;
+      padding-bottom: 25px;
+    }
+
+    @include breakpoints(sm) {
+      padding: 10px 0px 10px;
+    }
+  }
+
+  @include breakpoints(sm) {
+    display: $d-flex;
+    flex-direction: column-reverse;
   }
 }
